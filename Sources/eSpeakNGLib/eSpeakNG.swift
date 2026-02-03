@@ -18,11 +18,23 @@ public final class eSpeakNG {
     case couldNotPhonemize
   }
 
-  // Available languages
+  // Available languages - Extended for Kokoro multilingual support
   public enum Language: String, CaseIterable {
     case none = ""
+    // English
     case enUS = "en-us"
     case enGB = "en-gb"
+    // European languages
+    case italian = "it"
+    case spanish = "es"
+    case french = "fr-fr"
+    case portuguese = "pt-br"
+    case german = "de"
+    // Asian languages
+    case japanese = "ja"
+    case korean = "ko"
+    case chinese = "cmn"
+    case hindi = "hi"
   }
 
   // After constructing the wrapper, call setLanguage() before phonemizing any text
